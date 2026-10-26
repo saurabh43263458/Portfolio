@@ -4,13 +4,21 @@ import nodemailer from 'nodemailer';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
+import fs from 'fs';
+
 const app = express();
 const port = process.env.PORT || 3000;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+const distPath = path.join(__dirname, 'dist');
 
 app.use(express.json({ limit: '20kb' }));
-app.use(express.static(__dirname));
+
+if (fs.existsSync(distPath)) {
+  app.use(express.static(distPath));
+} else {
+  app.use(express.static(__dirname));
+}
 
 const requiredFields = ['name', 'email', 'subject', 'message'];
 

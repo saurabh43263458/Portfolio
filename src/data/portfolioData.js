@@ -61,7 +61,7 @@ export const portfolioData = {
       title: "KITSaTOz",
       desc: "Premium 3D-printed mechanical kits, artisan wooden DIY projects, and custom rapid prototyping platform.",
       tags: "REACT · TAILWIND CSS · VITE · E-COMMERCE",
-      link: "https://kitsatoz.vercel.app/",
+      link: "https://www.kitsatoz.com/",
       ariaLabel: "Open KITSaTOz live project",
       image: "/assets/kitsatoz-mockup.jpg",
       type: "image"

@@ -33,14 +33,6 @@ export default function Hero({ onOpenContact }) {
           <a className="button" href="#work">
             Explore my work <span>↘</span>
           </a>
-          <a
-            className="button button-outline"
-            href={personal.resumeUrl}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Resume <span>↓</span>
-          </a>
           <button
             type="button"
             className="text-link"
